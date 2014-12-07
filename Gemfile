@@ -31,3 +31,7 @@ gem 'therubyracer'
 gem 'less-rails'
 gem 'twitter-bootstrap-rails'
 gem 'jquery-datatables-rails', '~> 2.2.3'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0'
+end
