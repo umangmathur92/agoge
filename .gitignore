@@ -1,0 +1,9 @@
+.bundle
+*.gem
+*.rbc
+.config
+test/
+test/*
+tmp/*
+log/*
+public/*
