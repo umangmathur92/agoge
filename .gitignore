@@ -7,3 +7,5 @@ test/*
 tmp/*
 log/*
 public/*
+config/database.yml
+db/schema
