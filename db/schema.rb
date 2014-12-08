@@ -11,6 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141208172302) do
+
+  create_table "users", primary_key: "userid", force: true do |t|
+    t.string   "useremployeeid", limit: 6
+    t.string   "username",       limit: 40
+    t.string   "email"
+    t.string   "uid",            limit: 50
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
