@@ -34,4 +34,7 @@ gem 'jquery-datatables-rails', '~> 2.2.3'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem 'factory_girl_rails'
+  gem 'simplecov'
+  gem 'rails_best_practices'
 end
