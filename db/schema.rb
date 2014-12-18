@@ -14,10 +14,12 @@
 ActiveRecord::Schema.define(version: 20141215171955) do
 
   create_table "topic_users", force: true do |t|
-    t.integer "topic_id"
-    t.integer "user_id"
-    t.string  "priority", default: "normal"
-    t.boolean "present",  default: false
+    t.integer  "topic_id"
+    t.integer  "user_id"
+    t.string   "priority",   default: "normal"
+    t.boolean  "present",    default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "topics", force: true do |t|

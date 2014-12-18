@@ -4,6 +4,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :useremployeeid, limit: 6, default: nil
       t.string :username,       limit: 40, default: nil
       t.string :email,          null: false, default: ''
+      # Don't delete. Used for ldap
       t.string :uid,            limit: 50, default: nil
 
       t.timestamps
