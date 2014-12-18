@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :topic_users
-  has_many :topics, through: topic_users
+  has_many :topics, through: :topic_users
 end

@@ -21,9 +21,10 @@ ActiveRecord::Schema.define(version: 20141215171955) do
   end
 
   create_table "topics_users", force: true do |t|
-    t.string  "priority"
     t.integer "topic_id"
     t.integer "user_id"
+    t.string  "priority", default: "normal"
+    t.boolean "present",  default: false
   end
 
   create_table "users", primary_key: "userid", force: true do |t|
