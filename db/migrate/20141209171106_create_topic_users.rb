@@ -1,6 +1,6 @@
 class CreateTopicsUsers < ActiveRecord::Migration
   def up
-    create_table :topics_users do |t|
+    create_table :topic_users do |t|
       t.references :topic
       t.references :user
       t.string :priority, default: 'normal'
@@ -9,6 +9,6 @@ class CreateTopicsUsers < ActiveRecord::Migration
   end
 
   def down
-    drop_table :topics_users
+    drop_table :topic_users
   end
 end
