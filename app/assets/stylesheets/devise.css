@@ -1,0 +1,78 @@
+/*  Devise related CSS */
+
+body {
+  background-color: #FFFFFF;
+  color: #333333;
+}
+body, input, select, textarea, button {
+  font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
+}
+.auth-form {
+  width: 400px;
+  margin: 40px auto;
+}
+.auth-form form {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.075);
+}
+.auth-form-header {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 0 rgba(0,0,0,0.5);
+  background-color: #0080FF;
+  background-image: -webkit-linear-gradient(#7f95a5, #6c8393);
+  height: 44px;
+  background-repeat: repeat-x;
+  border: 1px solid #6e8290;
+  border-bottom-color: #586873;
+  border-radius:4px 4px 0 0;
+}
+.auth-form-header h1 { font-size: 16px; }
+.auth-form-header h1 a { color: #fff; }
+.auth-form-header .mini-icon {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  right: 10px;
+  color: rgba(0,0,0,0.4);
+  text-shadow: 0 1px 0 rgba(255,255,255,0.1);
+}
+.auth-form-body {
+  padding: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #fff;
+  border: 1px solid #d8dee2;
+  border-top-color: white;
+  border-radius: 0 0 4px 4px;
+}
+.auth-form-body .input-block { margin-top: 5px; margin-bottom: 15px; }
+.auth-form-subheading { margin: 0 }
+.auth-form-body p { margin: 0 0 10px; }
+.auth-form-permissions {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d8dee2;
+}
+.auth-form-permissions li { list-style-position: inside; padding-left: 15px; }
+.auth-form .note { margin: 15px 0; color: #777; text-align: center; }
+.context-loader-container .context-loader { display: none; }
+.context-loader-container .context-loader-overlay {
+  opacity: 1;
+  -moz-transition: opacity 0.2s ease-in 0;
+  -webkit-transition: opacity 0.2s ease-in 0;
+}
+.context-loader-container.is-context-loading .context-loader { display: block; white-space: nowrap }
+.context-loader-container.is-context-loading .context-loader-overlay { opacity: 0.5 }
+.input-block { display: block; width: 85%; min-height: 25px; }
+.error_box {
+    background: none repeat scroll 0 center #FFEBE8;
+    border: 1px solid #DD3C10;
+    font-weight: bold;
+    padding: 1em;
+}
